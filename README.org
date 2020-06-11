@@ -1,0 +1,13 @@
+* helm-eyebrowse
+Eyebrowse with helm backend
+
+[[screenshot.png]]
+
+* Usage
+This is a simple elisp script. You can define a shortcut with
+eyebrowse keymap like following:
+
+#+BEGIN_SRC emacs-lisp
+  (require 'helm-eyebrowse)
+  (define-key eyebrowse-mode-map (kbd "C-c C-w w") #'helm-eyebrowse--win-list)
+#+END_SRC
